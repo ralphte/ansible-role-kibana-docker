@@ -1,0 +1,5 @@
+---
+- name: restart kibana container
+  docker_container:
+    name: "{{ kibana_container_name }}"
+    restart: true

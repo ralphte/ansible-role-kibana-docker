@@ -1,0 +1,4 @@
+---
+kibana_volumes:
+    - /etc/localtime:/etc/localtime:ro
+    - "{{ kibana_dir }}/kibana.yml:/usr/share/kibana/config/kibana.yml:ro"

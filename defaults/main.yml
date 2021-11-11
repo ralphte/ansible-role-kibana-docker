@@ -1,0 +1,35 @@
+---
+# defaults file
+# Setup vars
+kibana_dir: /etc/elastic
+kibana_hostname: 'kibana'
+kibana_network: 'kibana'
+kibana_version: '7.12.0'
+
+# service vars
+kibana_container_name: 'kibana'
+kibana_network_name: "{{ kibana_network }}"
+kibana_image: 'docker.elastic.co/kibana/kibana:{{ kibana_version }}'
+kibana_add_volumes: []
+kibana_ports: []
+kibana_labels: {}
+kibana_env: {}
+kibana_log_options: 
+  max-size: "100m"
+  max-file: "3"
+
+kibana_index: '.kibana'
+kibana_server_name: 'kibana'
+kibana_server_host: '0.0.0.0'
+kibana_server_port: 5601
+kibana_xpack_encryptionkey: 
+
+kibana_username:
+kibana_password:
+kibana_server_basepath:
+kibana_server_baseurl:
+
+kibana_elasticsearch_hosts: '"http://127.0.0.1:9200"'
+
+kibana_user: '1000'
+kibana_group: '0'
